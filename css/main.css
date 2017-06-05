@@ -42,12 +42,10 @@ img {
   flex-basis: 66.6%;
   display: flex;
   flex-direction: column;
-  /*align-self: center;*/
-  justify-content: flex-end;
   align-items: center;
 }
 
-.nav-links {
+.head-nav-links {
   display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -70,6 +68,19 @@ img {
     flex-basis: 33.3%;
 }
 #join {
+  background-color: #00D5E7;
+  flex-basis: 33.4%;
+}
+
+#home-top {
+  background-color: #00A5BF;
+  flex-basis: 33.3%;
+}
+#cal-top {
+    background-color: #00B7D3;
+    flex-basis: 33.3%;
+}
+#join-top {
   background-color: #00D5E7;
   flex-basis: 33.4%;
 }
@@ -159,7 +170,6 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  align-items: center;
   font-family: 'PT Sans', sans-serif;
   font-size: 1.25rem;
 
@@ -189,6 +199,16 @@ h2 {
 span {
   font-weight: bold;
 }
+.foot-nav-links {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+}
 .footer-link-flex {
   display: flex;
   flex-direction: column;
@@ -196,18 +216,235 @@ span {
   align-items: center;
 }
 
-
 .footer-nav a {
   color: #ffffff;
   font-family: 'PT Sans', sans-serif;
   text-decoration: none;
+  font-size: 1.25rem;
   padding: 2%;
 }
 #legal {
   background-color: #7DDFE8;
   color: #ffffff;
   font-family: 'PT Sans', sans-serif;
-  padding: 5%;
+  font-size: 1.25rem;
+  padding: 8%;
   width: 100%;
   text-align: center;
+}
+
+/*tablet media query*/
+
+@media screen and (min-width: 545px) and (max-width: 768px) {
+  .main-nav {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .link-flex {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+    flex-grow: 1;
+  }
+  .logo-width {
+    flex-basis: 15%;
+  }
+  .head-nav-links a{
+    font-size: 1.1rem;
+  }
+  .head-nav-links{
+    flex-basis: 15%
+  }
+  #home-top {
+    flex-basis: 15%;
+  }
+  #join-top {
+    flex-basis: 15%;
+  }
+  #cal-top {
+    flex-basis: 15%;
+  }
+  .gap {
+    flex-basis: 55%;
+  }
+  .hero-image {
+    display: flex;
+  }
+  .hero-links {
+    flex-basis: 33.3%;
+  }
+  .main-film {
+    display:flex;
+    justify-content: flex-start;
+  }
+  #rashomon {
+    flex-basis: 51%;
+    width: 63vw;
+  }
+  .main-details {
+    flex-basis: 50%;
+  }
+  .secondary-films {
+    display:flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: flex-start;
+  }
+  #great-train {
+    flex-basis: 24%;
+  }
+  #bicycle-thief {
+      flex-basis: 24%;
+  }
+  #nosferatu {
+      flex-basis: 24%;
+  }
+  #metropolis {
+      flex-basis: 24%;
+  }
+
+  .footer-link-flex {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+  }
+  .foot-nav-links a {
+    font-size: 1rem;
+  }
+  .foot-nav-links {
+    padding: 5% 0%;
+  }
+
+  #legal {
+    text-align: right;
+    padding: 5% 1%;
+  }
+}
+/*desktop media query*/
+@media screen and (min-width: 769px) {
+  .main-nav {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .link-flex {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+    flex-grow: 1;
+  }
+  .logo-width {
+    flex-basis: 15%;
+  }
+  .head-nav-links {
+    flex-basis: 15%
+  }
+  .head-nav-links a{
+    font-size: 1.5rem;
+  }
+  #home-top {
+    flex-basis: 15%;
+  }
+  #join-top {
+    flex-basis: 15%;
+  }
+  #cal-top {
+    flex-basis: 15%;
+  }
+  .gap {
+    flex-basis: 55%;
+  }
+  h1 {
+    font-size: 3.5rem;
+    margin: 2% 0% 2% 2%;
+  }
+  .hero-links h3 {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  .hero-image {
+    display: flex;
+  }
+  .hero-links {
+    flex-basis: 33.3%;
+  }
+  .all-films {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .main-film {
+    display:flex;
+    justify-content: flex-start;
+    width: 50%;
+    flex-basis: 49%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    padding: 2%;
+  }
+  #rashomon {
+    width: 27vw;
+  }
+  .main-details {
+    line-height: 1.5;
+  }
+  .main-details a {
+    font-size: 2rem;;
+  }
+  .secondary-films {
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+    margin-top: auto;
+    padding-bottom: 5%;
+  }
+  #great-train {
+    flex-basis: 49%;
+  }
+  #bicycle-thief {
+      flex-basis: 49%;
+  }
+  #nosferatu {
+      flex-basis: 49%;
+  }
+  #metropolis {
+      flex-basis: 49%;
+  }
+  .footer-link-flex {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+  }
+  .foot-nav-links a {
+    font-size: 1.1rem;
+  }
+    #home {
+      flex-basis: 15%;
+      padding: 4%;
+    }
+    #join {
+      flex-basis: 15%;
+      padding: 4%;
+    }
+    #cal {
+      flex-basis: 15%;
+      padding: 4%;
+  }
+    #legal {
+    text-align: right;
+    padding: 4% 2% 4% 0%;
+    font-size: 1.1rem;
+  }
 }
