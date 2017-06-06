@@ -22,10 +22,6 @@ font-family: 'PT Sans', sans-serif;*/
 img {
   max-width: 100%;
 }
-#great-train, #bicycle-thief, #nosferatu, #metropolis {
-  max-width: 100%;
-}
-
 .logo-width {
   flex-basis: 33.4%;
   background-color: #F5005B;
@@ -91,7 +87,7 @@ main {
 h1 {
   color: #0B1942;
   font-family: 'PT Sans', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-weight: 300;
   margin: 5% 0% 5% 5%;
 }
@@ -108,7 +104,6 @@ h1 {
   color: #0B1942;
   font-family: 'PT Sans', sans-serif;
   font-size: 1.25rem;
-  font-weight: 600;
   margin: 5% 5% 5% 7%;
   line-height: 1.75;
 }
@@ -233,6 +228,68 @@ span {
   text-align: center;
 }
 
+/*calendar styles*/
+
+section {
+  background-color: #0B1942;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+.blank-days {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.date-box {
+  border: 2px solid #0B1942;
+  flex-basis: 14.27%;
+  min-height: 10vh;
+  background-color: #FFFFFF;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.day-number {
+  background-color: #0B1942;
+  color: #FFFFFF;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.9rem;
+  width: 7vw;
+  padding: 10%;
+  text-align: center;
+  flex-basis: 51%;
+  transform: translateX(-50%);
+}
+.pink-date-box {
+  border: 2px solid #0B1942;
+  flex-basis: 14.27%;
+  min-height: 10vh;
+  background-color: #F5005B;
+}
+.colored-date-box {
+  background-color: #0B1942;
+  border: 2px solid #0B1942;
+  flex-basis: 14.27%;
+  min-height: 10vh;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.colored-day-number h5 {
+  background-color: #0B1942;
+  color: #0B1942;
+  width: 7vw;
+  padding: 5%;
+  text-align: center;
+  flex-basis: 51%;
+}
 /*tablet media query*/
 
 @media screen and (min-width: 545px) and (max-width: 768px) {
@@ -252,7 +309,7 @@ span {
   .logo-width {
     flex-basis: 15%;
   }
-  .head-nav-links a{
+  .link-flex a {
     font-size: 1.1rem;
   }
   .head-nav-links{
@@ -324,6 +381,42 @@ span {
   #legal {
     text-align: right;
     padding: 5% 1%;
+    font-size: 1rem;
+  }
+
+  /*tablet calendar media query*/
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  .date-box {
+    border: 1px solid #0B1942;
+    flex-basis: 14.27%;
+    min-height: 15vh;
+  }
+  .day-number {
+    font-size: 1.25rem;
+    width: 7vw;
+    padding: 3%;
+  }
+  .pink-date-box {
+    border: 1px solid #0B1942;
+    flex-basis: 14.27%;
+    min-height: 15vh;
+  }
+  .colored-date-box {
+    background-color: #0B1942;
+    flex-basis: 14.27%;
+    min-height: 15vh;
+  }
+  .colored-day-number h5 {
+    color: #0B1942;
+    width: 7vw;
+    padding: 3%;
+
+  }
+    section {
+    padding-bottom: 5%;
   }
 }
 /*desktop media query*/
@@ -347,7 +440,7 @@ span {
   .head-nav-links {
     flex-basis: 15%
   }
-  .head-nav-links a{
+  .link-flex a {
     font-size: 1.5rem;
   }
   #home-top {
@@ -447,4 +540,34 @@ span {
     padding: 4% 2% 4% 0%;
     font-size: 1.1rem;
   }
+  /* desktop calendar media query*/
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .date-box {
+    border: 1px solid #0B1942;
+    flex-basis: 14.27%;
+    min-height: 20vh;
+  }
+  .day-number {
+    font-size: 1.5rem;
+    padding: 0%;
+  }
+  .pink-date-box {
+    border: 1px solid #0B1942;
+    flex-basis: 14.27%;
+    min-height: 20vh;
+  }
+  .colored-date-box {
+    background-color: #0B1942;
+    flex-basis: 14.27%;
+    min-height: 20vh;
+  }
+  .colored-day-number h5 {
+    color: #0B1942;
+    padding: 0%;
+  }
+
 }
