@@ -290,7 +290,69 @@ h2 {
   text-align: center;
   flex-basis: 51%;
 }
-/*tablet media query*/
+
+/*join page styles*/
+form {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.9rem;
+}
+.file-upload {
+  margin-left: 5%;
+}
+.profile-information input {
+  border-style: groove;
+}
+#profile-img img {
+  width: 70vw;
+  border-radius: 50%;
+  margin-top: 5%;
+}
+
+.placeholder-img {
+  display: flex;
+  flex-direction: column;
+}
+.name-email-form {
+  margin: 5% 0 5% 5%;
+}
+.name-email input {
+  width: 95%;
+  border-style: groove;
+  padding: 1.5%;
+}
+.genre-interest-form h4 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0% 0% 3% 5%;
+}
+.genre-checkbox div  {
+  padding: 1.5%;
+  margin-left: 5%;
+}
+.add-text-area {
+  margin: 5% 0% 3% 5%;
+}
+#textarea {
+  border-style: groove;
+  width: 95%;
+  height: 9vh;
+}
+
+#join-film-club {
+  background-color: #F5005B;
+  height: 10vh;
+  width: 30%;
+  padding: 0%;
+  margin: 3% 0% 10% 5%;
+  color: #ffffff;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  border-style: none;
+}
+
+/*tablet media querys*/
 
 @media screen and (min-width: 545px) and (max-width: 768px) {
   .main-nav {
@@ -418,8 +480,46 @@ h2 {
     section {
     padding-bottom: 5%;
   }
+
+/*tablet join media querys*/
+
+.top-profile-section {
+  display:flex;
 }
-/*desktop media query*/
+#profile-img img {
+    width: 35vw;
+    border-radius: 50%;
+    margin-top: 5%;
+  }
+  .profile-info {
+    flex-basis: 45%;
+  }
+  .top-email-name {
+    margin-top: -12%;
+  }
+  .top-passwords {
+    margin-top: 10%;
+  }
+  .name-email-form {
+    flex-basis: 48%;
+  }
+  .name-email-form div {
+    padding: 1%;
+  }
+  .genre-checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .genre-interest-form h4 {
+    margin: 5% 0% 3% 5%;
+  }
+  .genre-checkbox div {
+    flex-basis: 35%;
+  }
+}
+
+/*desktop media querys*/
 @media screen and (min-width: 769px) {
   .main-nav {
     display: flex;
@@ -569,4 +669,65 @@ h2 {
     color: #0B1942;
     padding: 0%;
   }
+
+/*desktop join media querys*/
+h1 {
+  font-size: 2.5rem;
+}
+
+#profile-img img {
+    width: 27vw;
+    border-radius: 50%;
+    margin-top: 5%;
+  }
+  .top-profile-section {
+    display: flex;
+  }
+  .profile-information {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  .name-email-form {
+    flex-basis: 65%;
+    margin-top: 0%;
+  }
+  .profile-name-email {
+    display: flex;
+    flex-direction: row;
+  }
+  .top-email-name div {
+    flex-basis: 33%;
+  }
+  .name-email-form div {
+    padding: 1%;
+    flex: 0 1 60%;
+  }
+  .name-email input {
+    padding: 2.5%;
+  }
+  .genre-checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .genre-interest-form h4 {
+    margin: 5% 0% 3% 5%;
+  }
+  .genre-checkbox div {
+    flex-basis: 24%;
+  }
+  .genre-checkbox div:last-child {
+    margin-right: 37.7%;
+  }
+  #textarea {
+    width: 65%;
+  }
+  #join-film-club {
+    width: 20%;
+  }
+
 }
