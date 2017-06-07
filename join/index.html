@@ -3,10 +3,150 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Film Club - Join</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   </head>
   <body>
+    <header>
+    <nav>
+        <div class="main-nav">
+          <div class="logo-width">
+          <img src="../images/filmclub.png" alt="film club logo">
+          </div>
+          <div class="link-flex" id="top-nav-bar">
+                <a class="head-nav-links" id="home-top"
+                href="../index.html">Home</a>
+                <a class="head-nav-links" id="cal-top" href="../calendar/index.html">Calendar</a>
+                <a class="head-nav-links" id="join-top" href="../join/index.html">Join</a>
+              <div class="gap">
 
+              </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Join Film Club</h1>
+    </main>
+    <div class="top-profile-section">
+      <div class="profile-info">
+        <div class="file-upload">
+          <form class="profile information" action="index.html" method="post">
+            <label for="profilepic">profile picture</label>
+            <div>
+            <input type="file" name="profilepic" id="profilepic" value="No file chosen">
+            </div>
+          </form>
+        </div>
+        <div class="placeholder-img" id="profile-img">
+          <img src="../images/profile-placeholder.png" alt="grey image of a silhoutte of a person">
+        </div>
+      </div>
+      <div class="name-email-form">
+        <form class="profile-name-email" action="index.html" method="post">
+          <div class="name-email">
+            <label for="name">name</label>
+            <input type="text" name="name" id="name" value="">
+          </div>
+          <div class="name-email">
+            <label for="emailaddress">email address</label>
+            <input type="email" name="emailaddress" id="emailaddress" value="">
+          </div>
+          <div class="email-name">
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" value="">
+          </div>
+          <div class="name-email">
+            <label for="confirm">confirm password</label>
+            <input type="password" name="confirm" id="confirm" value="">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="bottom-profile-section">
+      <div class="genre-interest">
+        <div class="genre-interest-form">
+          <h4>Which genres are you interested in?</h4>
+          <form class="genre-checkbox" action="index.html" method="post">
+            <div>
+            <input type="checkbox" id="action" name="action" value="action">
+            <label for="action">action</label>
+            </div>
+            <div>
+            <input type="checkbox" id="adventure" name="adventure" value="adeventure">
+            <label for="adventure">adventure</label>
+            </div>
+            <div>
+            <input type="checkbox" id="comedy" name="comedy" value="comedy">
+            <label for="comedy">comedy</label>
+            </div>
+            <div>
+            <input type="checkbox" id="drama" name="drama" value="adrama">
+            <label for="drama">drama</label>
+            </div>
+            <div>
+            <input type="checkbox" id="fantasy" name="fantasy" value="fantasy">
+            <label for="fantasy">fantasy</label>
+            </div>
+            <div>
+            <input type="checkbox" id="historical" name="historical" value="historical">
+            <label for="historical">historical</label>
+            </div>
+            <div>
+            <input type="checkbox" id="horror" name="horror" value="horror">
+            <label for="horror">horror</label>
+            </div>
+            <div>
+            <input type="checkbox" id="mystery" name="mystery" value="mystery">
+            <label for="mystery">mystery</label>
+            </div>
+            <div>
+            <input type="checkbox" id="romance" name="romance" value="romance">
+            <label for="romance">romance</label>
+            </div>
+            <div>
+            <input type="checkbox" id="science-fiction" name="science-fiction" value="science-fiction">
+            <label for="science-fiction">science fiction</label>
+            </div>
+            <div>
+            <input type="checkbox" id="western" name="western" value="western">
+            <label for="western">western</label>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="text-box-area">
+        <form class="add-text-area" action="index.html" method="post">
+          <div class="add-text">
+          <label for="textarea">Additional input</label>
+          </div>
+          <div>
+            <textarea id="textarea"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="join-button">
+          <input type="join-film-club" name="join-film-club" id="join-film-club" value="Join Film Club">
+      </div>
+    </div>
+  <footer>
+      <div class="footer-nav">
+        <div class="footer-link-flex">
+            <div class="foot-nav-links" id="home">
+              <a href="index.html">Home</a>
+            </div>
+            <div class="foot-nav-links" id="cal">
+              <a href="calendar/index.html">Calendar</a>
+            </div>
+            <div class="foot-nav-links" id="join">
+              <a href="join/index.html">Join</a>
+            </div>
+            <div id="legal">
+            &copy 2017, Film Club
+            </div>
+          </div>
+        </div>
+    </footer>
   </body>
 </html>
