@@ -54,6 +54,7 @@ img {
   color: #ffffff;
   font-family: 'PT Sans', sans-serif;
   text-decoration: none;
+  cursor: pointer;
 }
 #home {
   background-color: #00A5BF;
